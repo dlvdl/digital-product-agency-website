@@ -19,6 +19,9 @@ export default {
         "grey-200": "#565656",
         "grey-300": "#757575",
       },
+      maxWidth: {
+        large: "1400px",
+      },
     },
   },
   plugins: [],
