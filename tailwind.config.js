@@ -18,6 +18,10 @@ export default {
         "grey-100": "#E7F0FC",
         "grey-200": "#565656",
         "grey-300": "#757575",
+        "box-grey": "#F1F7FF",
+        "wallet-yelow": "#FFF7E3",
+        "chart-green": "#DEFFEE",
+        "code-pink": "#FFF2F8",
       },
       maxWidth: {
         large: "1400px",
