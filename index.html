@@ -14,7 +14,7 @@
     <title>Digital agency</title>
   </head>
   <body>
-    <header class="mb-8">
+    <header class="mb-8 pt-11">
       <div
         class="max-w-screen-xl mx-auto flex justify-between px-2 lg:px-20 items-center"
       >
@@ -25,12 +25,36 @@
           <ul
             class="font-main font-normal text-black gap-6 lg:gap-14 flex-wrap tracking-wide hidden md:flex"
           >
-            <li>Home</li>
-            <li>What We Do</li>
-            <li>Service</li>
-            <li>Project</li>
-            <li>Blog</li>
-            <li>Contacts</li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            >
+              <a href="#">What We Do</a>
+            </li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+            >
+              <a href="#">Service</a>
+            </li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+            >
+              <a href="#">Project</a>
+            </li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+            >
+              <a href="#">Blog</a>
+            </li>
+            <li
+              class="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right"
+            >
+              <a href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="flex items-center md:hidden">
@@ -39,7 +63,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="overflow-hidden pb-44">
       <section>
         <div class="max-w-screen-xl mx-auto flex md:flex-row flex-col">
           <div class="flex-1 pl-2 lg:pl-20 relative">
@@ -53,7 +77,7 @@
             </p>
             <div class="mt-8 relative z-20">
               <a
-                class="text-center text-lg font-bold text-white px-6 py-4 bg-blue rounded-2xl"
+                class="text-center text-lg font-bold text-white px-6 py-4 bg-blue rounded-2xl hover:opacity-90 transition-opacity"
                 href="#"
                 >Contact Now</a
               >
@@ -77,12 +101,12 @@
       <section class="mt-20">
         <div class="max-w-screen-xl mx-auto lg:px-20 px-2">
           <h2 class="text-xl font-bold">Our Client</h2>
-          <div class="flex items-start">
-            <p class="text-base text-grey-200 mr-14 self-end">
+          <div class="flex items-start flex-wrap">
+            <p class="text-base text-grey-200 mr-14 self-end mb-14">
               Several selected clients, who already <br />believe in our
               service.
             </p>
-            <div class="flex items-end justify-between gap-14">
+            <div class="flex items-end justify-between gap-14 flex-wrap">
               <img src="./Google Logo.svg" alt="google logo" />
 
               <img src="./Airbnb Logo.svg" alt="airnb logo" />
@@ -100,7 +124,9 @@
       </section>
       <section class="mt-20 relative">
         <div class="max-w-screen-xl mx-auto lg:px-20 px-2">
-          <div class="flex items-center gap-10 relative">
+          <div
+            class="flex items-center gap-10 relative flex-wrap lg:flex-nowrap"
+          >
             <div class="flex-auto">
               <div class="relative">
                 <h2 class="text-xl font-bold relative z-20">
@@ -115,7 +141,7 @@
                 online business services.
               </p>
             </div>
-            <div class="w-10/12 grid grid-cols-2 gap-8 z-30">
+            <div class="w-full lg:w-10/12 grid grid-cols-2 gap-8 z-30">
               <div class="col | pt-12 flex flex-col gap-4">
                 <div
                   class="card | flex flex-col items-center gap-8 bg-white shadow-lg rounded-3xl row-start-2"
@@ -125,9 +151,7 @@
                   >
                     <img src="./box-search 1.svg" alt="#" />
                   </div>
-                  <h3
-                    class="text-black font-bold text-2xl w-[160px] text-center"
-                  >
+                  <h3 class="text-black font-bold text-2xl text-center">
                     Business Idea Planning
                   </h3>
                   <p
@@ -197,7 +221,7 @@
                 </div>
               </div>
             </div>
-            <div class="absolute -right-56 z-10 bottom-10">
+            <div class="flex absolute -right-56 z-10 bottom-10">
               <img src="./public/Rectangle 24.png" alt="" />
             </div>
             <div class="absolute -bottom-6 -right-10">
@@ -212,10 +236,12 @@
       </section>
       <section class="mt-20">
         <div class="max-w-screen-xl mx-auto lg:px-20 px-2">
-          <div class="flex gap-20 items-center">
-            <div class="w-2/4">
+          <div
+            class="flex gap-10 lg:gap-20 items-center relative flex-wrap-reverse lg:flex-nowrap"
+          >
+            <div class="flex justify-center w-full">
               <div
-                class="overflow-hidden rounded-2xl relative w-[550px] h-[310px] bg-slate-950"
+                class="overflow-hidden rounded-2xl relative w-[550px] h-[310px] bg-slate-950 z-20"
               >
                 <video
                   class="rounded-2xl w-[550px] h-[310px] z-20"
@@ -246,8 +272,11 @@
                   </button>
                 </div>
               </div>
+              <div class="absolute -bottom-12 left-[42%] z-10">
+                <img src="./Ellipse 86.png" alt="" />
+              </div>
             </div>
-            <div class="relative w-2/4">
+            <div class="relative">
               <h2 class="text-xl font-bold relative z-20 mb-8">
                 Great Digital Product Agency since 2016
               </h2>
@@ -265,7 +294,239 @@
           </div>
         </div>
       </section>
+      <section class="mt-44">
+        <div class="max-w-screen-xl mx-auto lg:px-20 px-2">
+          <h2 class="text-xl font-bold relative z-20 text-center">
+            What our happy client say
+          </h2>
+          <p class="text-grey-200 text-lg leading-8 text-center mb-32">
+            Several selected clients, who already believe in our service.
+          </p>
+          <div class="carusel | flex flex-wrap lg:flex-nowrap justify-center">
+            <div
+              class="col | flex items-center flex-wrap justify-center lg:justify-normal lg:flex-nowrap"
+            >
+              <div class="relative">
+                <img
+                  class="w-[389px] h-[389px] relative z-20"
+                  src="./unsplash_MTZTGvDsHFY.png"
+                  alt=""
+                />
+                <img
+                  class="absolute bottom-10 z-10"
+                  src="./Ellipse 87.svg"
+                  alt=""
+                />
+              </div>
+              <div class="flex-col mb-20 lg:mb-0 lg:w-2/4">
+                <h3 class="text-lg font-bold">Matthew Paul</h3>
+                <p class="text-grey-200">
+                  Perfect, very good job! Thank you for the amazing design and
+                  work. Really impressed with the high quality and quick
+                  turnaround time. Highly recommend.
+                </p>
+                <div
+                  class="carusel_status mt-10 flex justify-center lg:justify-normal"
+                >
+                  <div
+                    class="w-4 h-4 aspect-square bg-blue rounded-full mr-6"
+                  ></div>
+                  <div
+                    class="w-4 h-4 aspect-square bg-grey-100 rounded-full mr-6"
+                  ></div>
+                  <div
+                    class="w-4 h-4 aspect-square bg-grey-100 rounded-full mr-6"
+                  ></div>
+                  <div
+                    class="w-4 h-4 aspect-square bg-grey-100 rounded-full mr-6"
+                  ></div>
+                  <div
+                    class="w-4 h-4 aspect-square bg-grey-100 rounded-full mr-6"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col | lg:w-2/3">
+              <div
+                class="w-11/12 min-w-[280px] h-full aspect-square rounded-full relative"
+              >
+                <img
+                  class="absolute top-0 left-2/4 -translate-x-1/2 -translate-y-1/2 z-10"
+                  src="./unsplash_3TLl_97HNJo.png"
+                  alt=""
+                />
+                <img
+                  class="absolute right-4 top-6 z-10"
+                  src="./unsplash_et_78QkMMQs.png"
+                  alt=""
+                />
+                <img
+                  class="absolute -right-4 top-2/4 -translate-y-1/2 z-10"
+                  src="./unsplash_6anudmpILw4.png"
+                  alt=""
+                />
+                <img
+                  class="absolute right-8 bottom-6 z-10"
+                  src="./unsplash_W7b3eDUb_2I.png"
+                  alt=""
+                />
+                <img
+                  class="absolute -bottom-8 left-24 -translate-x-1/2 z-10"
+                  src="./unsplash_OhKElOkQ3RE.png"
+                  alt=""
+                />
+                <img
+                  class="absolute -left-8 bottom-20 z-10"
+                  src="./unsplash_d1UPkiFd04A.png"
+                  alt=""
+                />
+                <img
+                  class="absolute -translate-y-1/2 top-16 -left-6 z-10"
+                  src="./unsplash_mEZ3PoFGs_k.png"
+                  alt=""
+                />
+                <img
+                  class="absolute left-2/4 top-2/4 -translate-x-1/2 -translate-y-1/2 z-10"
+                  src="./unsplash_O3ymvT7Wf9U.png"
+                  alt=""
+                />
+                <img
+                  class="absolute bottom-10 z-0"
+                  src="./public/Ellipse 93.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-44">
+        <div class="max-w-screen-xl mx-auto relative px-2 z-30">
+          <div
+            class="flex flex-col lg:flex-row items-center bg-form-grey relative h-[292px] w-full rounded-[75px] z-20"
+          >
+            <div class="flex flex-1 items-center justify-center relative z-30">
+              <div>
+                <h2 class="text-xl font-bold relative mb-2 z-20">
+                  Subscribe Newsletter
+                </h2>
+                <p class="text-grey-300">
+                  I will update good news and promotion service not spam
+                </p>
+              </div>
+            </div>
+            <div class="relative flex z-30">
+              <form class="relative z-30" action="" method="post">
+                <input
+                  class="w-[380px] h-[80px] relative rounded-full p-7 text-input-grey transition-all"
+                  type="text"
+                  placeholder="Enter your email address.."
+                />
+
+                <input
+                  class="absolute z-30 bg-blue hover:opacity-90 transition-opacity cursor-pointer right-2 -translate-y-1/2 top-2/4 px-10 py-5 rounded-full text-white font-bold"
+                  type="submit"
+                  value="Contact Now"
+                />
+              </form>
+            </div>
+            <img
+              class="absolute hidden lg:block top-0 lg:right-0 z-20"
+              src="./Rectangle 31.png"
+              alt=""
+            />
+          </div>
+          <img
+            class="absolute -bottom-10 -left-10 z-0"
+            src="./Rectangle 32.png"
+            alt=""
+          />
+
+          <img class="absolute -top-10 -right-10 z-0" src="./Dot.png" alt="" />
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="max-w-screen-xl mx-auto">
+        <div
+          class="flex border-b-2 border-grey-border border-t-2 px-2 py-16 gap-4 flex-wrap-reverse lg:flex-nowrap justify-center"
+        >
+          <div class="col |">
+            <img class="mb-6" src="./public/A+ Studio foot.svg" alt="" />
+            <p class="mb-10 text-grey-200 leading-6 w-[270px]">
+              Leading digital agency with solid design and development
+              expertise. We build readymade websites, mobile applications, and
+              elaborate online business services.
+            </p>
+            <div class="flex gap-4">
+              <img src="./facebook.svg" alt="" />
+              <img src="./linkedin.svg" alt="" />
+              <img src="./twitter.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="col | w-full flex flex-wrap justify-center lg:justify-between"
+          >
+            <div class="w-[150px]">
+              <h4 class="font-bold text-lg mb-6">What We Do</h4>
+              <ul class="[&>*]:mb-3">
+                <li class="">
+                  <p>Web Design</p>
+                </li>
+                <li><p>App Design</p></li>
+                <li>
+                  <p>Social Media Manage</p>
+                </li>
+                <li><p>Market Analysis Project</p></li>
+              </ul>
+            </div>
+            <div class="w-[150px]">
+              <h4 class="font-bold text-lg mb-6">Company</h4>
+              <ul class="[&>*]:mb-3">
+                <li>
+                  <p>Web Design</p>
+                </li>
+                <li>
+                  <p>App Design</p>
+                </li>
+                <li>
+                  <p>Social Media Manage</p>
+                </li>
+                <li>
+                  <p>Market Analysis Project</p>
+                </li>
+              </ul>
+            </div>
+            <div class="w-[150px]">
+              <h4 class="font-bold text-lg mb-6">Support</h4>
+              <ul class="[&>*]:mb-3">
+                <li>
+                  <p>FAQ</p>
+                </li>
+                <li>
+                  <p>Policy</p>
+                </li>
+                <li>
+                  <p>Business</p>
+                </li>
+              </ul>
+            </div>
+            <div class="w-[150px]">
+              <h4 class="font-bold text-lg mb-6">Contact</h4>
+              <ul class="[&>*]:mb-3">
+                <li>
+                  <p>WhatsApp</p>
+                </li>
+                <li>
+                  <p>Support 24</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
